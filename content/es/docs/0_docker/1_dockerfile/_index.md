@@ -1,11 +1,11 @@
 ---
 title: "Dockerfile"
 linkTitle: " Docker compose"
-weight: 10
+weight: 30
 menu:
   main:
     weight: 20
-icon: fa-solid fa-recycle
+icon: "fa-solid fa-file-export"
   
 draft: false    
 ---
@@ -19,12 +19,19 @@ En las transparencias utilizadas para el curso, se irán referenciando de forma 
 
 ## 1 bash
 
-Creamos un docker para ejectutar un shell
+ Crea una imagen llamada __web:v1__ a partir de un __ubuntu:latest__
 
 {{< pageinfo color="primary" >}}
-<h2 style="color:green"> Fichero docker-compose.yaml</h2>
-{{< readfile file="1_bash/docker-compose.yaml" code="true" lang="yaml" >}}
+<h2 style="color:green"> Fichero Dokcerfile</h2>
+{{< readfile file="1_bash/Dockerfile" code="true" lang="docker" >}}
 {{< /pageinfo >}}
+
+
+{{< highlight bash "hl_lines=1" >}}
+docker build -t web:v1 .
+docker images
+
+{{< / highlight >}}
 
 
 ```shell

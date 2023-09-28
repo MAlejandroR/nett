@@ -4,11 +4,5 @@
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/themes/docsy" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/themes/docsy/assets/vendor/Font-Awesome" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/themes/docsy/assets/vendor/bootstrap" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../videos" vcs="Git" />
-    <mapping directory="$USER_HOME$/laravel/portal_dwes_access" vcs="Git" />
-    <mapping directory="$USER_HOME$/laravel/recursos_web" vcs="Git" />
-    <mapping directory="/var/www/html/nett" vcs="Git" />
   </component>
 </project>
