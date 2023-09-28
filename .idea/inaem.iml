@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="staticSite" />
+    <orderEntry type="module" module-name="industria4_0" />
+    <orderEntry type="module" module-name="ej" />
+    <orderEntry type="module" module-name="recursos_web" />
+    <orderEntry type="module" module-name="portal_dwes_access" />
+    <orderEntry type="module" module-name="practicas" />
+    <orderEntry type="module" module-name="tutoria_form" />
+    <orderEntry type="module" module-name="nett" />
+    <orderEntry type="module" module-name="videos" />
+    <orderEntry type="module" module-name="html" />
+    <orderEntry type="module" module-name="api_docker" />
+  </component>
+</module>
