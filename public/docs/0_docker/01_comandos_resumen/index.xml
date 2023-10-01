@@ -1,0 +1,341 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Máster en  Web – Docker Prácticas</title>
+    <link>http://proyectosdwa.es/manuel/docs/0_docker/01_comandos_resumen/</link>
+    <description>Recent content in Docker Prácticas on Máster en  Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    
+	  <atom:link href="http://proyectosdwa.es/manuel/docs/0_docker/01_comandos_resumen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Docker Prácticas</title>
+      <link>http://proyectosdwa.es/manuel/docs/0_docker/01_comandos_resumen/0_resumen_comandos_docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://proyectosdwa.es/manuel/docs/0_docker/01_comandos_resumen/0_resumen_comandos_docker/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;__-comandos__&#34;&gt;&lt;strong&gt;⭐ Comandos&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Repaso de &lt;strong&gt;comandos&lt;/strong&gt; usados en &lt;strong&gt;docker&lt;/strong&gt; en &lt;strong&gt;línea de comados&lt;/strong&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;descargando-imágenes&#34;&gt;Descargando imágenes&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;pull&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Obtener en local una imagen llamada &lt;strong&gt;ubuntu:latest&lt;/strong&gt;::&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    docker pull ubunut:latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;visualizar-imágenes-en-local&#34;&gt;Visualizar imágenes en local&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;images&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Listar todas las imágenes del sistema&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker images
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;buscar-imágenes&#34;&gt;Buscar imágenes&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker search&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Buscar todas las imágenes que contengan ubuntu cuya distribución empiece por 1&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker search ubuntu:1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;crear--un-__contenedor__&#34;&gt;Crear  un &lt;strong&gt;contenedor&lt;/strong&gt;&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker create&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Crea un contenedor basado en la imagen &lt;strong&gt;ubuntu:latest&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker create ubuntu:latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h5 id=&#34;crearlo-vinculándolo-al-terminal&#34;&gt;Crearlo vinculándolo al terminal&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker create -t&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Crea un contenedor que quede vinculado a un terminal &lt;strong&gt;tty&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    docker create -t ubuntu:latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h5 id=&#34;nombrar-el-contenedor&#34;&gt;Nombrar el contenedor&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker create  &amp;ndash;name&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Crear un contenedor llamado &lt;strong&gt;web&lt;/strong&gt; a partir de la imagen ubuntu:latest y vincúlalo al terminal&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    docker create --name web -t ubuntu:latest
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;arrancar-el-contenedor-web&#34;&gt;Arrancar el contenedor web&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;start&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Arranca un contenedor (previamente creado)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; docker start web
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;ejecutar-un-comando-en-un-contenedor&#34;&gt;Ejecutar un comando en un contenedor&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;⭐ El contenedor tiene que estar en estado Up&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;exec&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ejecuta en un contenedor previamente creado llamado &lt;strong&gt;web&lt;/strong&gt; el comando ls &lt;em&gt;(Este comando muestra un listado de ficheros del contenedor)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    docker &lt;span style=&#34;color:#658b00&#34;&gt;exec&lt;/span&gt; -ti  web ls
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Revisa&lt;/h4&gt;
+
+    En este caso no funcionará ya que el contenedor creado no está asociad a un terminal y trabajar de forma interactiva
+
+&lt;/div&gt;
+
+
+
+
+&lt;hr style=&#34;border-color: red; border-width: 3px;&#34;/&gt;
+
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;creando-comandos-para-interactuar-en-un-terminal&#34;&gt;Creando comandos para interactuar en un terminal&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker create -t -i&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Crear un contenedor llamada web para interactuar y luego ejecuta un bash &lt;em&gt;(Este comando ejecuta un intérprete de comandos de un sistema operativo)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; docker rm web
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; docker create --name web -t -i ubuntu:latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; docker start web
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; docker &lt;span style=&#34;color:#658b00&#34;&gt;exec&lt;/span&gt; -ti bash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Revisa&lt;/h4&gt;
+
+    Antes de crear el contenedor lo borramos  &lt;br&gt;
+Antes de ejectuar algo, lo tenemos que arrancar  &lt;br&gt;
+En este caso el comando start lo deja en estado up, ya que el contenedor fue coreado con &lt;strong&gt;-i&lt;/strong&gt;  y &lt;strong&gt;-t&lt;/strong&gt;
+
+&lt;/div&gt;
+
+
+
+
+&lt;hr style=&#34;border-color: red; border-width: 3px;&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;listar-todos--los-contenesores&#34;&gt;Listar todos  los contenesores&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker ps -a&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lista todos los contenedores que tenemos en el sistema&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker ps -a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;listar-los-contenesores-arrancados&#34;&gt;Listar los contenesores arrancados&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;__docker ps __&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lista todos los contenedores en estado Up&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker ps 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Prueba&lt;/h4&gt;
+
+    Si no ponemos &lt;strong&gt;-a&lt;/strong&gt; que viene de &lt;strong&gt;all&lt;/strong&gt; solo nos mostrará los contenedores que actualmente tenemos arrancados (en estado Up)
+
+&lt;/div&gt;
+
+
+
+
+&lt;hr style=&#34;border-color: red; border-width: 3px;&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;crear-un-contenedor-dejarlo-arrancado--ejecuta-una-instrucción-ls&#34;&gt;Crear un contenedor, dejarlo arrancado  ejecuta una instrucción: ls&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;El contenedor se crea a partir de la imagen &lt;strong&gt;ubuntu:latest&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;La instrucción que queremos ejecutar es ls&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker run&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; docker run  ubuntu:latest ls
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;crear-un-contenedor-dejarlo-arrancado--ejecuta-una-instrucción-bash&#34;&gt;Crear un contenedor, dejarlo arrancado  ejecuta una instrucción: bash&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;El contenedor queremos que deje abierta un terminal para interactuar con el  bash&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker run&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; docker run  -ti ubuntu:latest bash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Importante&lt;/h4&gt;
+
+    &lt;blockquote&gt;
+&lt;p&gt;Entiende bien las opciones
+-ti se pone para que se quede abierto el terminal que está ejecutando el &lt;strong&gt;bash&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;crando-un-contenedor-con-run-y-que-tenga-nombre&#34;&gt;Crando un contenedor con run y que tenga nombre&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker run &amp;ndash;name&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Crea un contenedor llamado web y deja abierto un bash&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    docker rm web 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    docker run -ti --name web ubuntu:latest bash    
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Cuidado&lt;/h4&gt;
+
+    Si intentamos crear un contenedor cuyo nombre ya exista nos dará un error
+
+&lt;/div&gt;
+
+
+
+
+&lt;hr style=&#34;border-color: red; border-width: 3px;&#34;/&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;forward-de-puertos&#34;&gt;Forward de puertos&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker run -p XXXX:XXXX&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Crea un contenedor llamado web, abriendo un terminal y mapea el puerto 8000 del anfitrión al 80 del contenedor&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; docker rm web 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; docker run -ti --name web ubuntu:latest -p 8000:80 bash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;h4 id=&#34;compartiendo-carpetas&#34;&gt;Compartiendo carpetas&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;docker run -v c:\carpeta_origen:/var/www/html&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Crea un contenedor llamado &lt;strong&gt;web&lt;/strong&gt;, abriendo un terminal y comparte la carpeta del directorio actual llamada &lt;strong&gt;app&lt;/strong&gt; con la carpeta del docker ubicada en &lt;strong&gt;/var/www/html&lt;/strong&gt;. Mapea los puertos anteriores&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; docker rm web 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; docker run -ti --name web ubuntu:latest -p 8000:80  -v .&lt;span style=&#34;color:#cd5555&#34;&gt;\a&lt;/span&gt;pp:/var/www/html bash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Warning&lt;/h4&gt;
+
+    &lt;ul&gt;
+&lt;li&gt;Cuidado con la barra de separacion de carpetas o directorios &lt;strong&gt;(en windows &amp;ldquo;&amp;quot;, en linux &amp;ldquo;/&amp;rdquo;)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Si la carpeta no existe la crea&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;/div&gt;
+
+
+
+
+&lt;hr style=&#34;border-color: red; border-width: 3px;&#34;/&gt;
+&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

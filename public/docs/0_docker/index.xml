@@ -16,10 +16,49 @@
     
     <item>
       <title>Docs: Docker Prácticas</title>
-      <link>http://proyectosdwa.es/manuel/docs/0_docker/1_ejercicios/</link>
+      <link>http://proyectosdwa.es/manuel/docs/0_docker/01_comandos_resumen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://proyectosdwa.es/manuel/docs/0_docker/1_ejercicios/</guid>
+      <guid>http://proyectosdwa.es/manuel/docs/0_docker/01_comandos_resumen/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;Resumen comandos básicos usados con docker:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Instrucciones de comandos en línea de docker
+Resumen instrucciones usadas en el fichero &lt;strong&gt;Dockerfile&lt;/strong&gt;
+Resumen estructura &lt;strong&gt;docker-compose.yaml&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Realizamos unos ejercicios básicos con comandos de docker&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Colaboremos&lt;/h4&gt;
+
+    Es importante un feedback para completar esta web, espero vuestras ideas
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Docker Prácticas</title>
+      <link>http://proyectosdwa.es/manuel/docs/0_docker/02_ejercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://proyectosdwa.es/manuel/docs/0_docker/02_ejercicios/</guid>
       <description>
         
         
