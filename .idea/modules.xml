@@ -3,13 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$USER_HOME$/laravel/api_docker/.idea/api_docker.iml" filepath="$USER_HOME$/laravel/api_docker/.idea/api_docker.iml" />
-      <module fileurl="file:///var/www/ej/.idea/ej.iml" filepath="/var/www/ej/.idea/ej.iml" />
-      <module fileurl="file:///var/www/html/.idea/html.iml" filepath="/var/www/html/.idea/html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../var/www/ej/.idea/ej.iml" filepath="$PROJECT_DIR$/../../../../var/www/ej/.idea/ej.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../xampp/htdocs/ej1/.idea/ej1.iml" filepath="$PROJECT_DIR$/../../../../xampp/htdocs/ej1/.idea/ej1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../var/www/html/.idea/html.iml" filepath="$PROJECT_DIR$/../../../../var/www/html/.idea/html.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/inaem.iml" filepath="$PROJECT_DIR$/.idea/inaem.iml" />
       <module fileurl="file://$PROJECT_DIR$/../industria4_0/.idea/industria4_0.iml" filepath="$PROJECT_DIR$/../industria4_0/.idea/industria4_0.iml" />
-      <module fileurl="file:///var/www/html/nett/.idea/nett.iml" filepath="/var/www/html/nett/.idea/nett.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../var/www/html/nett/.idea/nett.iml" filepath="$PROJECT_DIR$/../../../../var/www/html/nett/.idea/nett.iml" />
       <module fileurl="file://$USER_HOME$/laravel/portal_dwes_access/.idea/portal_dwes_access.iml" filepath="$USER_HOME$/laravel/portal_dwes_access/.idea/portal_dwes_access.iml" />
-      <module fileurl="file:///var/www/html/practicas/.idea/practicas.iml" filepath="/var/www/html/practicas/.idea/practicas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../var/www/html/practicas/.idea/practicas.iml" filepath="$PROJECT_DIR$/../../../../var/www/html/practicas/.idea/practicas.iml" />
       <module fileurl="file://$USER_HOME$/laravel/recursos_web/.idea/recursos_web.iml" filepath="$USER_HOME$/laravel/recursos_web/.idea/recursos_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/../staticSite/.idea/staticSite.iml" filepath="$PROJECT_DIR$/../staticSite/.idea/staticSite.iml" />
       <module fileurl="file://$USER_HOME$/web/tutoria_form/.idea/tutoria_form.iml" filepath="$USER_HOME$/web/tutoria_form/.idea/tutoria_form.iml" />

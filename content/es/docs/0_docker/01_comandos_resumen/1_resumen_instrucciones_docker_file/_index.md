@@ -152,3 +152,111 @@ docker run -d -p 8000:80 --name web web:v1 sh -c "service apache2 start && tail 
 * Y para que no se termine el proceso ejectuamos un comando que deja abierto un fichero __tail -f /dev/null__
 {{< /alert >}}
 {{<line />}}
+  {{% pageinfo color="primary" %}}
+####  ADD: Copiar ficheros del contesto a la imagen.
+####  CMD ejecuta un comando cuando se inicia el contenedor.
+> __ADD__ __CMD__
+>> __ADD__ Copia un fichero llamado https://github.com/MAlejandroR/json_tv/blob/main/tv.json en una imagen 
+```dockerfile
+FROM ubuntu:latest
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt update && apt install -y \
+    apache2\
+    php\
+    libapache2-mod-php\
+    php-json
+ADD https://raw.githubusercontent.com/MAlejandroR/json_tv/main/tv.json  /var/www/html/tv.json
+COPY index.php /var/www/html
+RUN chmod 775 /var/www/html/*
+CMD sh -c "service apache2 start && tail -f /dev/null"
+```
+* El contenido del fichero __index.php__
+```php
+<?php
+$tv = file_get_contents("tv.json");
+$cadenas = json_decode($tv, true);
+foreach ($cadenas as $cadena) {
+    echo "<h1>{$cadena['name']}</h1>";
+    foreach ($cadena['channels'] as $canal){
+        echo "
+        <a href='{$canal['web']}'>
+            <img src = '{$canal['logo']}'>
+        </a>";
+    }
+    echo "<hr style='background-color:green;height:10px' />";
+}
+?>
+```
+* La construcción del contenedor
+ ```bash
+docker run -d -p 8000:80 --name web web:v1 
+ ```
+* Solicitamos el recurso en un navegador y vemos el resultado    
+  ![img_1.png](img_1.png)
+{{% /pageinfo %}}
+{{< alert title="Comentarios" color="warning" >}}
+:memo: En este ejemplo es un poco complicado, comentamos
+* Recupero el fichero que hay en la web __tv.json__
+* Tengo que instalar una extensión de php (__phgp-json__) para leer su contenido que es un __json__.
+* Tengo que dar __permisos__ para que apache pueda leer su contendio
+* Cuidado con las barras si quiero especificar __"./tv.js"__ vs __".\tv.js"__
+* :smile:El código de php ya lo realizaremos cuando empecemos con ese tema :smile:
+* No tenemos que especificar ningún comando para que se ejecute el contenedor
+* El __-d__ es para especificar que se ejecute el contenedor en background.
+  {{< /alert >}}
+  {{<line />}}
+
+{{% pageinfo color="primary" %}}
+####  Especificar el puerto que voy a mapear o realizar el forware
+> __EXPOSE__
+>> Establece que vas a realizar un forwar sobre el puerto 80
+```dockerfile
+FROM ubuntu:latest
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt update && apt install -y \
+    apache2\
+    php\
+    libapache2-mod-php\
+    php-json
+ADD https://raw.githubusercontent.com/MAlejandroR/json_tv/main/tv.json  /var/www/html/tv.json
+COPY index.php /var/www/html
+RUN chmod 775 /var/www/html/*
+EXPOSE 80
+CMD sh -c "service apache2 start && tail -f /dev/null"
+```
+{{% /pageinfo %}}
+{{< alert title="Comentarios" color="warning" >}}
+* Uso el mismo ejemplo anterior especicando que voy a compartir el puerto 80
+* Este comando es informativo, no obliga a nada ni por ponerlo se comparte el puertoç
+* Es recomendado en las buenas prácticas
+> __docker build -t web - -build-arg=18:01 .__
+{{< /alert >}}
+{{<line />}}
+{{% pageinfo color="primary" %}}
+####  Crear etiquetas en la imagen
+> __LABEL__
+>> Añade 3 etiquetas, tu identificación _maintainer_ _description_ _version_ 
+```dockerfile
+FROM ubuntu:latest
+ARG DEBIAN_FRONTEND=noninteractive
+LABEL maintainer="manuel Romero <manuelromeromiguel@gmail.com>"
+LABEL description="Imagen de contenedor con Apache, PHP y un archivo JSON"
+LABEL version="1.0"
+RUN apt update && apt install -y \
+    apache2\
+    php\
+    libapache2-mod-php\
+    php-json
+ADD https://raw.githubusercontent.com/MAlejandroR/json_tv/main/tv.json  /var/www/html/tv.json
+COPY index.php /var/www/html
+RUN chmod 775 /var/www/html/*
+EXPOSE 80
+CMD sh -c "service apache2 start && tail -f /dev/null"
+```
+{{% /pageinfo %}}
+{{< alert title="Comentarios" color="warning" >}}
+* Puedes crear tus propias etiquetas.
+* __maintainer, description, version__ se usan de forma estándar. 
+> __docker build -t web - -build-arg=18:01 .__
+{{< /alert >}}
+{{<line />}} 

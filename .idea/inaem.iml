@@ -15,5 +15,6 @@
     <orderEntry type="module" module-name="videos" />
     <orderEntry type="module" module-name="html" />
     <orderEntry type="module" module-name="api_docker" />
+    <orderEntry type="module" module-name="ej1" />
   </component>
 </module>
