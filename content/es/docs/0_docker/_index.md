@@ -9,16 +9,16 @@ icon: fa-brands fa-docker
 draft: false    
 ---
 
-{{< pageinfo >}}
-* Resumen comandos básicos usados con docker:
-> Instrucciones de comandos en línea de docker
-> Resumen instrucciones usadas en el fichero __Dockerfile__
-> Resumen estructura __docker-compose.yaml__
+{{% pageinfo %}}
+### __:clipboard: Resumen comandos básicos usados con docker__
+> :whale: __Instrucciones de comandos en línea de docker__   
+> :page_facing_up: Resumen instrucciones usadas en el fichero __Dockerfile__   
+> :ship:Resumen estructura __docker-compose.yaml__
 
 
 
 * Realizamos unos ejercicios básicos con comandos de docker    
-{{< /pageinfo >}}
+{{% /pageinfo %}}
 {{< alert title="Colaboremos" color="warning" >}}
 Es importante un feedback para completar esta web, espero vuestras ideas
 {{< /alert >}}
