@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$USER_HOME$/laravel/api_docker/.idea/api_docker.iml" filepath="$USER_HOME$/laravel/api_docker/.idea/api_docker.iml" />
+      <module fileurl="file://$USER_HOME$/Docker/.idea/docker.iml" filepath="$USER_HOME$/Docker/.idea/docker.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../../../var/www/ej/.idea/ej.iml" filepath="$PROJECT_DIR$/../../../../var/www/ej/.idea/ej.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../../../xampp/htdocs/ej1/.idea/ej1.iml" filepath="$PROJECT_DIR$/../../../../xampp/htdocs/ej1/.idea/ej1.iml" />
+      <module fileurl="file://$USER_HOME$/git_docker/.idea/git_docker.iml" filepath="$USER_HOME$/git_docker/.idea/git_docker.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../../../var/www/html/.idea/html.iml" filepath="$PROJECT_DIR$/../../../../var/www/html/.idea/html.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/inaem.iml" filepath="$PROJECT_DIR$/.idea/inaem.iml" />
       <module fileurl="file://$PROJECT_DIR$/../industria4_0/.idea/industria4_0.iml" filepath="$PROJECT_DIR$/../industria4_0/.idea/industria4_0.iml" />
