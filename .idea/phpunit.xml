@@ -3,8 +3,27 @@
   <component name="PHPUnit">
     <option name="directories">
       <list>
-        <option value="$USER_HOME$/laravel/recursos_web/tests" />
+        <option value="/var/www/html/correcion_practicas/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/Denis Murcia Suárez/Examen_Desarrollo_Servidor_Denis/tests" />
+        <option value="/var/www/html/laravel1/src/a/tests" />
         <option value="$USER_HOME$/laravel/portal_dwes_access/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/JORGE TEJEL CATALÁN/Examen_Servidor_2trimestre/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/ANDRÉS JULIÁN ARAGÓN GUERRERO/examen/tests" />
+        <option value="$USER_HOME$/laravel/recursos_web/tests" />
+        <option value="$USER_HOME$/laravel/api_docker/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/Pilar Laborda/examen_laravel/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/Raúl Acín Herrero/EntregaExamenLaravel/examenRAH/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/MANUEL DE MIGUEL CALVO/ExamenServidor2Ev/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/Mario Moros/ExamenServidor2Ev/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/JEANINE MURCIA SUÁREZ/JeanineMurcia_Examen/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/Irene SANZ BERMÚDEZ/Examen_Desarrollo_Servidor_Denis/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/Iván Mosteo/ExamenLaravel/examen/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/SAMUEL BONET GONZÁLEZ/laravelExamenManuel/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/Daniel Caballo  Tirado/ExamenManuel/Examen/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/Andrés Ochoa Bueno/Examen_Laravel/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/CARLOS SESMA USARRALDE/Ex/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/Ricardo Fernandez/EntregaExamenLaravel/examenRAH/tests" />
+        <option value="/var/www/html/correcion_practicas/practicas/examen_2023_vespertino/MIGUEL ÁNGEL LÓPEZ RUIZ/examen_laravel/tests" />
       </list>
     </option>
   </component>
