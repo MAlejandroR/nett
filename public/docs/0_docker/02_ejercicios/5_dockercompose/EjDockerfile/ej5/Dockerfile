@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get  -y install apache2 \
-   php \
-   libapache2-mod-php
+   02_php \
+   libapache2-mod-02_php
 
 RUN apt-get -y  install mysql-server mysql-client
 

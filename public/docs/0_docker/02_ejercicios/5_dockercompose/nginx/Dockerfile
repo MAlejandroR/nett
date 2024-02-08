@@ -3,8 +3,8 @@ ENV DEBIAN_FRONTEND="noninteracive"
 ADD . /app
 
 RUN apt-get update &&  apt-get install -y apache2 \
-    php \
-    libapache2-mod-php \
+    02_php \
+    libapache2-mod-02_php \
     mysql-client \
     mysql-server
 

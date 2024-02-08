@@ -36,7 +36,7 @@ Posteriormente, hay que cargarla en el componente de **listado_tabla.vue**
 {{< highlight javascript "linenos=table,anclorlinenos=true, hl_lines=3 7-9" >}}
 <script>
 import axios from 'axios';
-import {TailwindPagination} from 'laravel-vue-pagination';
+import {TailwindPagination} from '04_laravel-vue-pagination';
 
 export default {
     name: "tabla",
@@ -114,7 +114,7 @@ Y ahora implmentamos el método del cliente
         }
 {{< / highlight >}}
 
-Nos quedaría terminar el proceso, es decir, agregar la ruta **/paginate** en el fichero de rutas **web.php** e implementar el método correspondiente
+Nos quedaría terminar el proceso, es decir, agregar la ruta **/paginate** en el fichero de rutas **web.02_php** e implementar el método correspondiente
 
 {{%pageinfo%}}
 Cuidado al añadir la ruta, si la ponemos después de resources, no funcionará.
@@ -130,7 +130,7 @@ Para solucionarlo tenemos dos opciones:
  2.- Establecer un patrón para {empresa}, especificando que tiene que ser un número
 {{%/pageinfo%}}
 
-{{< highlight php "linenos=table,anclorlinenos=true, hl_lines=3" >}}
+{{< highlight 02_php "linenos=table,anclorlinenos=true, hl_lines=3" >}}
     Route::get("alumnos/paginate",[ \App\Http\Controllers\AlumnoController::class,"get_paginate"] );
 {{< / highlight >}}
  Y en el fichero del controlador agretamos el método **get_paginate**
